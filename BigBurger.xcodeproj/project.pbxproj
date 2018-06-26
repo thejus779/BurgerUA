@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		149B295320D5B9D9001FD88E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B295220D5B9D9001FD88E /* ListViewController.swift */; };
+		149B295520D5B9E7001FD88E /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B295420D5B9E7001FD88E /* BasketViewController.swift */; };
+		149B295920D5BA23001FD88E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B295820D5BA23001FD88E /* ListTableViewCell.swift */; };
+		149B295B20D5BA32001FD88E /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B295A20D5BA32001FD88E /* BasketTableViewCell.swift */; };
+		149C24DC20D3EC9900570EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C24DB20D3EC9900570EAA /* AppDelegate.swift */; };
+		149C24E120D3EC9900570EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149C24DF20D3EC9900570EAA /* Main.storyboard */; };
+		149C24E420D3EC9900570EAA /* BurgerUA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 149C24E220D3EC9900570EAA /* BurgerUA.xcdatamodeld */; };
+		149C24E620D3EC9900570EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149C24E520D3EC9900570EAA /* Assets.xcassets */; };
+		149C24E920D3EC9900570EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149C24E720D3EC9900570EAA /* LaunchScreen.storyboard */; };
+		149C24F420D3EC9A00570EAA /* BurgerUATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C24F320D3EC9A00570EAA /* BurgerUATests.swift */; };
+		14A5206C20D7A728002AFF76 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5206620D7A728002AFF76 /* HTTPClient.swift */; };
+		14A5206E20D7A728002AFF76 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5206820D7A728002AFF76 /* APIRoutes.swift */; };
+		14A5206F20D7A728002AFF76 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5206920D7A728002AFF76 /* APIConstants.swift */; };
+		14A5207120D7A728002AFF76 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5206B20D7A728002AFF76 /* APIManager.swift */; };
+		14A5207320D7B396002AFF76 /* BurgerEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5207220D7B396002AFF76 /* BurgerEndPoint.swift */; };
+		14A5207520D7B404002AFF76 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5207420D7B404002AFF76 /* APIHandler.swift */; };
+		14A5207820D81A51002AFF76 /* Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5207720D81A51002AFF76 /* Conversions.swift */; };
+		14A5207F20D94FE6002AFF76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5207E20D94FE6002AFF76 /* Constants.swift */; };
+		14F9A37F20D5B97E002556F6 /* Burgers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9A37E20D5B97E002556F6 /* Burgers.swift */; };
+		F1204DE35C8928B1022574B7 /* Pods_BurgerUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEB9A3A417E83D69F8394BF /* Pods_BurgerUA.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		149C24F020D3EC9A00570EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 149C24D020D3EC9900570EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 149C24D720D3EC9900570EAA;
+			remoteInfo = BurgerUA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		149B295220D5B9D9001FD88E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		149B295420D5B9E7001FD88E /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		149B295820D5BA23001FD88E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		149B295A20D5BA32001FD88E /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		149C24D820D3EC9900570EAA /* BigBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		149C24DB20D3EC9900570EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		149C24E020D3EC9900570EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		149C24E320D3EC9900570EAA /* BurgerUA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BurgerUA.xcdatamodel; sourceTree = "<group>"; };
+		149C24E520D3EC9900570EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		149C24E820D3EC9900570EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		149C24EA20D3EC9900570EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		149C24EF20D3EC9A00570EAA /* BigBurgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigBurgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		149C24F320D3EC9A00570EAA /* BurgerUATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerUATests.swift; sourceTree = "<group>"; };
+		149C24F520D3EC9A00570EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A5206620D7A728002AFF76 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		14A5206820D7A728002AFF76 /* APIRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
+		14A5206920D7A728002AFF76 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		14A5206B20D7A728002AFF76 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		14A5207220D7B396002AFF76 /* BurgerEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerEndPoint.swift; sourceTree = "<group>"; };
+		14A5207420D7B404002AFF76 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		14A5207720D81A51002AFF76 /* Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversions.swift; sourceTree = "<group>"; };
+		14A5207E20D94FE6002AFF76 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14F9A37E20D5B97E002556F6 /* Burgers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burgers.swift; sourceTree = "<group>"; };
+		900CE25D0625F77082DA8385 /* Pods-BurgerUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerUA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerUA/Pods-BurgerUA.debug.xcconfig"; sourceTree = "<group>"; };
+		B7340D2B6D9A22BC469DBD6D /* Pods-BurgerUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerUA.release.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerUA/Pods-BurgerUA.release.xcconfig"; sourceTree = "<group>"; };
+		CEEB9A3A417E83D69F8394BF /* Pods_BurgerUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		149C24D520D3EC9900570EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1204DE35C8928B1022574B7 /* Pods_BurgerUA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149C24EC20D3EC9A00570EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		149B295620D5B9F7001FD88E /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				149B295720D5BA03001FD88E /* TableCells */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		149B295720D5BA03001FD88E /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				149B295820D5BA23001FD88E /* ListTableViewCell.swift */,
+				149B295A20D5BA32001FD88E /* BasketTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		149C24CF20D3EC9900570EAA = {
+			isa = PBXGroup;
+			children = (
+				149C24DA20D3EC9900570EAA /* BurgerUA */,
+				149C24F220D3EC9A00570EAA /* BurgerUATests */,
+				149C24D920D3EC9900570EAA /* Products */,
+				F560D801DD7733575F7C6FF9 /* Pods */,
+				E3EA3040D0AFD3FEFA9AA284 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		149C24D920D3EC9900570EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				149C24D820D3EC9900570EAA /* BigBurger.app */,
+				149C24EF20D3EC9A00570EAA /* BigBurgerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		149C24DA20D3EC9900570EAA /* BurgerUA */ = {
+			isa = PBXGroup;
+			children = (
+				14A5206420D7A6F6002AFF76 /* Services */,
+				149B295620D5B9F7001FD88E /* Reusables */,
+				14F9A37A20D5B94A002556F6 /* MVC */,
+				149C24E520D3EC9900570EAA /* Assets.xcassets */,
+				149C24EA20D3EC9900570EAA /* Info.plist */,
+				149C24E220D3EC9900570EAA /* BurgerUA.xcdatamodeld */,
+			);
+			path = BurgerUA;
+			sourceTree = "<group>";
+		};
+		149C24F220D3EC9A00570EAA /* BurgerUATests */ = {
+			isa = PBXGroup;
+			children = (
+				149C24F320D3EC9A00570EAA /* BurgerUATests.swift */,
+				149C24F520D3EC9A00570EAA /* Info.plist */,
+			);
+			path = BurgerUATests;
+			sourceTree = "<group>";
+		};
+		14A5206420D7A6F6002AFF76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14A5208020D9531F002AFF76 /* AppDelegate */,
+				14A5207D20D94E80002AFF76 /* Constants */,
+				14A5207620D81A25002AFF76 /* Misc */,
+				14A5206520D7A708002AFF76 /* Web */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14A5206520D7A708002AFF76 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				14A5207420D7B404002AFF76 /* APIHandler.swift */,
+				14A5207220D7B396002AFF76 /* BurgerEndPoint.swift */,
+				14A5206920D7A728002AFF76 /* APIConstants.swift */,
+				14A5206B20D7A728002AFF76 /* APIManager.swift */,
+				14A5206820D7A728002AFF76 /* APIRoutes.swift */,
+				14A5206620D7A728002AFF76 /* HTTPClient.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		14A5207620D81A25002AFF76 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				14A5207720D81A51002AFF76 /* Conversions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		14A5207D20D94E80002AFF76 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				14A5207E20D94FE6002AFF76 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		14A5208020D9531F002AFF76 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				149C24DB20D3EC9900570EAA /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		14F9A37A20D5B94A002556F6 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				14F9A37D20D5B959002556F6 /* Controller */,
+				14F9A37C20D5B955002556F6 /* View */,
+				14F9A37B20D5B950002556F6 /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		14F9A37B20D5B950002556F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14F9A37E20D5B97E002556F6 /* Burgers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F9A37C20D5B955002556F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				149C24E720D3EC9900570EAA /* LaunchScreen.storyboard */,
+				149C24DF20D3EC9900570EAA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F9A37D20D5B959002556F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				149B295220D5B9D9001FD88E /* ListViewController.swift */,
+				149B295420D5B9E7001FD88E /* BasketViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EA3040D0AFD3FEFA9AA284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB9A3A417E83D69F8394BF /* Pods_BurgerUA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F560D801DD7733575F7C6FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				900CE25D0625F77082DA8385 /* Pods-BurgerUA.debug.xcconfig */,
+				B7340D2B6D9A22BC469DBD6D /* Pods-BurgerUA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		149C24D720D3EC9900570EAA /* BigBurger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 149C24F820D3EC9A00570EAA /* Build configuration list for PBXNativeTarget "BigBurger" */;
+			buildPhases = (
+				218E9531C8A551055AC56FC1 /* [CP] Check Pods Manifest.lock */,
+				149C24D420D3EC9900570EAA /* Sources */,
+				149C24D520D3EC9900570EAA /* Frameworks */,
+				149C24D620D3EC9900570EAA /* Resources */,
+				480830D36C495F51D90A8B85 /* [CP] Embed Pods Frameworks */,
+				877A67BE2D7B3EF397228DD5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigBurger;
+			productName = BurgerUA;
+			productReference = 149C24D820D3EC9900570EAA /* BigBurger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		149C24EE20D3EC9A00570EAA /* BigBurgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 149C24FB20D3EC9A00570EAA /* Build configuration list for PBXNativeTarget "BigBurgerTests" */;
+			buildPhases = (
+				149C24EB20D3EC9A00570EAA /* Sources */,
+				149C24EC20D3EC9A00570EAA /* Frameworks */,
+				149C24ED20D3EC9A00570EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				149C24F120D3EC9A00570EAA /* PBXTargetDependency */,
+			);
+			name = BigBurgerTests;
+			productName = BurgerUATests;
+			productReference = 149C24EF20D3EC9A00570EAA /* BigBurgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		149C24D020D3EC9900570EAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = thejus;
+				TargetAttributes = {
+					149C24D720D3EC9900570EAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					149C24EE20D3EC9A00570EAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 149C24D720D3EC9900570EAA;
+					};
+				};
+			};
+			buildConfigurationList = 149C24D320D3EC9900570EAA /* Build configuration list for PBXProject "BigBurger" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 149C24CF20D3EC9900570EAA;
+			productRefGroup = 149C24D920D3EC9900570EAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				149C24D720D3EC9900570EAA /* BigBurger */,
+				149C24EE20D3EC9A00570EAA /* BigBurgerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		149C24D620D3EC9900570EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149C24E920D3EC9900570EAA /* LaunchScreen.storyboard in Resources */,
+				149C24E620D3EC9900570EAA /* Assets.xcassets in Resources */,
+				149C24E120D3EC9900570EAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149C24ED20D3EC9A00570EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		218E9531C8A551055AC56FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BurgerUA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		480830D36C495F51D90A8B85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BurgerUA/Pods-BurgerUA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerUA/Pods-BurgerUA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877A67BE2D7B3EF397228DD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerUA/Pods-BurgerUA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		149C24D420D3EC9900570EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A5207520D7B404002AFF76 /* APIHandler.swift in Sources */,
+				14A5207120D7A728002AFF76 /* APIManager.swift in Sources */,
+				149B295520D5B9E7001FD88E /* BasketViewController.swift in Sources */,
+				149C24E420D3EC9900570EAA /* BurgerUA.xcdatamodeld in Sources */,
+				14A5207320D7B396002AFF76 /* BurgerEndPoint.swift in Sources */,
+				14A5207F20D94FE6002AFF76 /* Constants.swift in Sources */,
+				14A5206C20D7A728002AFF76 /* HTTPClient.swift in Sources */,
+				14A5206E20D7A728002AFF76 /* APIRoutes.swift in Sources */,
+				14F9A37F20D5B97E002556F6 /* Burgers.swift in Sources */,
+				149B295320D5B9D9001FD88E /* ListViewController.swift in Sources */,
+				14A5207820D81A51002AFF76 /* Conversions.swift in Sources */,
+				14A5206F20D7A728002AFF76 /* APIConstants.swift in Sources */,
+				149C24DC20D3EC9900570EAA /* AppDelegate.swift in Sources */,
+				149B295920D5BA23001FD88E /* ListTableViewCell.swift in Sources */,
+				149B295B20D5BA32001FD88E /* BasketTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149C24EB20D3EC9A00570EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149C24F420D3EC9A00570EAA /* BurgerUATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		149C24F120D3EC9A00570EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 149C24D720D3EC9900570EAA /* BigBurger */;
+			targetProxy = 149C24F020D3EC9A00570EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		149C24DF20D3EC9900570EAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				149C24E020D3EC9900570EAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		149C24E720D3EC9900570EAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				149C24E820D3EC9900570EAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		149C24F620D3EC9A00570EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		149C24F720D3EC9A00570EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		149C24F920D3EC9A00570EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900CE25D0625F77082DA8385 /* Pods-BurgerUA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerUA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.test.BurgerUA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		149C24FA20D3EC9A00570EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7340D2B6D9A22BC469DBD6D /* Pods-BurgerUA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerUA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.test.BurgerUA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		149C24FC20D3EC9A00570EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerUATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.test.BurgerUATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigBurger.app/BigBurger";
+			};
+			name = Debug;
+		};
+		149C24FD20D3EC9A00570EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerUATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.test.BurgerUATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigBurger.app/BigBurger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		149C24D320D3EC9900570EAA /* Build configuration list for PBXProject "BigBurger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149C24F620D3EC9A00570EAA /* Debug */,
+				149C24F720D3EC9A00570EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		149C24F820D3EC9A00570EAA /* Build configuration list for PBXNativeTarget "BigBurger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149C24F920D3EC9A00570EAA /* Debug */,
+				149C24FA20D3EC9A00570EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		149C24FB20D3EC9A00570EAA /* Build configuration list for PBXNativeTarget "BigBurgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149C24FC20D3EC9A00570EAA /* Debug */,
+				149C24FD20D3EC9A00570EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		149C24E220D3EC9900570EAA /* BurgerUA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				149C24E320D3EC9900570EAA /* BurgerUA.xcdatamodel */,
+			);
+			currentVersion = 149C24E320D3EC9900570EAA /* BurgerUA.xcdatamodel */;
+			path = BurgerUA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 149C24D020D3EC9900570EAA /* Project object */;
+}
